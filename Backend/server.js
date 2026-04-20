@@ -9,6 +9,16 @@ const app = express();
 
 app.use(express.json()); // allows us to accept JSON data in the req.body.
 
+app.get('/api/products', async (req, res) => {
+    try {
+        const products = await Product.find({});
+        res.status(200).json({ success: true, data: products });
+    } catch (error) {
+        console.log('Error in fetching products:', error.message);
+        res.status(500).json({ success: false, message: 'Server Error' });
+    };
+})
+
 app.post('/api/products', async (req, res) => {
     const product = req.body; // Assuming the product data is sent in the request body as JSON
 
