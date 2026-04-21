@@ -41,7 +41,7 @@ app.put('/api/products/:id', async (req, res) => {
     const updatedData = req.body; // Assuming the updated product data is sent in the request body as JSON
 
     if (!mongoose.Types.ObjectId.isValid(id)) {
-        return res.status(404).json({ success: false, message: 'Invalid product ID' });
+        return res.status(404).json({ success: false, message: 'Invalid product ID' }); // invalid ID format
     }
 
     try {
@@ -49,7 +49,7 @@ app.put('/api/products/:id', async (req, res) => {
         res.status(200).json({ success: true, data: updatedProduct });
     } catch (error) {
         console.log('Error in updating product:', error.message);
-        res.status(500).json({ success: false, message: 'Server Error' });
+        res.status(500).json({ success: false, message: 'Server Error' }); // for any other server error during update
     }
 })
 
