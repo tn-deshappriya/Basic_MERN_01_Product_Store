@@ -4,7 +4,6 @@ import { FiPlusSquare } from "react-icons/fi";
 import { IoMoon } from "react-icons/io5";
 import { LuSun } from "react-icons/lu";
 
-
 const Navbar = () => {
     const { colorMode, toggleColorMode } = useColorMode();
     return (
