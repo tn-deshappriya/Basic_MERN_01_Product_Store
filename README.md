@@ -2,6 +2,23 @@
 
 A simple full-stack e-commerce product management application built with the MERN stack (MongoDB, Express, React, Node.js).
 
+---
+
+## 🌗 Features Overview
+
+- **Light Theme & Dark Theme:** Instantly switch between light and dark modes for a comfortable viewing experience.
+- **Database:** Uses MongoDB for storing product data, supporting both local and cloud (MongoDB Atlas) setups.
+
+### Screenshots
+
+| Light Theme | Dark Theme | Database |
+|-------------|------------|----------|
+| ![Light Theme](Frontend/public/screenshots/light-theme.png) | ![Dark Theme](Frontend/public/screenshots/dark-theme.png) | ![Database](Frontend/public/screenshots/database.png) |
+
+> Place your screenshots in the `Frontend/public/screenshots/` folder with the above file names for them to appear on the GitHub repository front page.
+
+---
+
 ## 🛠️ Tech Stack
 
 ### Backend
